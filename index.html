@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="A password generator">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div id="contentContainer">
+    <h1>Password Generator</h1>
+    <div class="passwordButtonContainer">
+      <div style="display: flex; gap: 8px">
+        <div onClick="copyPassword()" class="passwordButton"><i class="glyphicon glyphicon-list-alt"></i></div>
+        <div onClick="generatePassword()" class="passwordButton" style="transform: scale(-1, 1);"><i class="glyphicon glyphicon-refresh"></i></div>
+        <div id="message-display-outer">
+<!--          <div class="message-display-inner"></div>-->
+        </div>
+      </div>
+    </div>
+
+    <p><label>Suggestion:</label><br/> <span id="generated"></span></p>
+    <div class="slidecontainer">
+      <label for="charCount">
+        Password Length: <span id="demo"></span>
+      </label><br/>
+      <input type="range" min="1" max="100" value="20" class="slider" id="charCount" name="charCount">
+    </div>
+
+    <div id="checkbox-container">
+      <label class="checkbox-btn">
+        <input class="checkbox" type="checkbox" id="lowercase" name="lowercase" checked="checked" onclick="check(this)">
+        <span></span>
+        Lowercase Letters
+      </label>
+      <label class="checkbox-btn">
+        <input class="checkbox" type="checkbox" id="uppercase" name="uppercase" checked="checked" onclick="check(this)">
+        <span></span>
+        Uppercase Letters
+      </label>
+      <label class="checkbox-btn">
+        <input class="checkbox" type="checkbox" id="numbers" name="numbers" checked="checked" onclick="check(this)">
+        <span></span>
+        Numbers
+      </label>
+      <label class="checkbox-btn">
+        <input class="checkbox" type="checkbox" id="symbols" name="symbols" checked="checked" onclick="check(this)">
+        <span></span>
+        Symbols
+      </label>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
