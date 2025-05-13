@@ -1,7 +1,7 @@
 :root {
-  --racing-green: #004226;
-  --dark-blue: #123957;
-  --white: #ffffff;
+  --color-primary: #3454D1;
+  --color-black: #070707;
+  --color-white: #FFF;
 }
 
 label {
@@ -9,8 +9,8 @@ label {
 }
 
 body {
-  color: var(--white)!important;
-  background-color: var(--racing-green)!important;
+  color: var(--color-white)!important;
+  background-color: var(--color-primary)!important;
   font-family: Arial, Helvetica, sans-serif!important;
   font-size: 20px!important;
 
@@ -38,9 +38,9 @@ body {
 
 .passwordButton {
   font-size:20px;
-  color: var(--white);
-  background: var(--dark-blue);
-  border: #222222 solid 1px;
+  color: var(--color-white);
+  background: var(--color-black);
+  border: var(--color-black) solid 1px;
   width: 50px;
   height: 50px;
   padding: 14px;
@@ -88,7 +88,7 @@ body {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background-color: var(--dark-blue);
+  background-color: var(--color-black);
   transition: 0.3s;
 }
 
@@ -97,8 +97,8 @@ body {
   display: inline-block;
   width: 24px;
   height: 12px;
-  border-bottom: 3px solid var(--white);
-  border-left: 3px solid var(--white);
+  border-bottom: 3px solid var(--color-white);
+  border-left: 3px solid var(--color-white);
   transform: scale(0) rotate(-45deg);
   position: relative;
   bottom: 4px;
@@ -110,7 +110,7 @@ body {
 }
 
 .checkbox-btn input:checked ~ span {
-  background-color: var(--dark-blue);
+  background-color: var(--color-black);
 }
 
 .checkbox-btn input:checked ~ span::before {
@@ -134,7 +134,7 @@ html {
   max-width: 400px;
   height: 15px;
   border-radius: 5px;
-  background: var(--dark-blue);
+  background: var(--color-black);
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -151,7 +151,7 @@ html {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--white);
+  background: var(--color-white);
   cursor: pointer;
 }
 
@@ -159,7 +159,7 @@ html {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--white);
+  background: var(--color-white);
   cursor: pointer;
 }
 /*Slider Styles - End*/
